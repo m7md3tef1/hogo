@@ -5,8 +5,9 @@ class CustomScaffold extends StatelessWidget {
   var appBar;
   var body;
   var navBar;
+  var drawer;
 
-  CustomScaffold({Key? key,this.appBar, this.body,this.navBar}) : super(key: key);
+  CustomScaffold({Key? key,this.appBar,this.drawer, this.body,this.navBar}) : super(key: key);
 
 
   @override
@@ -16,7 +17,7 @@ class CustomScaffold extends StatelessWidget {
         backgroundColor: ColorManager.backgroundColor,
         bottomNavigationBar: navBar,
         appBar: appBar,
-        body: body,
+        body: body,drawer: drawer,
       ),
     );
   }

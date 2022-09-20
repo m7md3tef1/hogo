@@ -125,26 +125,31 @@ class Body extends StatelessWidget {
                           children: [
                             CustomText(
                               text: available[index],
+                              align: TextAlign.start,
                               fontSize: 8.sp,
                               fontWeight: FontWeight.w500,
                             ),
                             CustomText(
                                 text: origin[index],
+                                align: TextAlign.start,
                                 fontSize: 8.sp,
                                 fontWeight: FontWeight.w500),
                             CustomText(
                                 height: 20.h,
                                 width: 47.w,
+                                align: TextAlign.start,
                                 text: state1[index],
                                 fontSize: 8.sp,
                                 fontWeight: FontWeight.w500),
                             CustomText(
                                 text: destination[index],
+                                align: TextAlign.start,
                                 fontSize: 8.sp,
                                 fontWeight: FontWeight.w500),
                             CustomText(
                                 width: 49.w,
                                 height: 20.h,
+                                align: TextAlign.start,
                                 text: state2[index],
                                 fontSize: 8.sp,
                                 fontWeight: FontWeight.w500),
@@ -152,12 +157,14 @@ class Body extends StatelessWidget {
                                 height: 20.h,
                                 width: 39.w,
                                 text: type[index],
+                                align: TextAlign.start,
                                 fontSize: 8.sp,
                                 fontWeight: FontWeight.w500),
                             CustomText(
                                 width: 39.w,
                                 height: 30.h,
                                 text: size[index],
+                                align: TextAlign.start,
                                 color:
                                     index.isOdd ? Colors.green : Colors.orange,
                                 fontSize: 8.sp,

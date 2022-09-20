@@ -113,6 +113,7 @@ class Body extends StatelessWidget {
                           children: [
                             CustomText(
                               text: available[index],
+                              align: TextAlign.start,
                               fontSize: 8.sp,
                               fontWeight: FontWeight.w500,
                             ),
@@ -120,34 +121,40 @@ class Body extends StatelessWidget {
                               height: 20.h,
                                 width: 30.w,
                                 text: origin[index],
+                                align: TextAlign.start,
                                 fontSize: 8.sp,
                                 fontWeight: FontWeight.w500),
                             CustomText(
                                 height: 20.h,
                                 width: 47.w,
                                 text: state1[index],
+                                align: TextAlign.start,
                                 fontSize: 8.sp,
                                 fontWeight: FontWeight.w500),
                             CustomText(
                                 text: destination[index],
                                 fontSize: 8.sp,
+                                align: TextAlign.start,
                                 fontWeight: FontWeight.w500),
                             CustomText(
                                 width: 46.w,
                                 height: 20.h,
                                 text: state2[index],
+                                align: TextAlign.start,
                                 fontSize: 8.sp,
                                 fontWeight: FontWeight.w500),
                             CustomText(
                                 height: 30.h,
                                 width: 53.w,
                                 text: type[index],
+                                align: TextAlign.start,
                                 fontSize: 8.sp,
                                 fontWeight: FontWeight.w500),
                             CustomText(
                                 width: 29.w,
                                 height: 20.h,
                                 text: size[index],
+                                align: TextAlign.start,
                                 color:
                                  Colors.green ,
                                 fontSize: 8.sp,

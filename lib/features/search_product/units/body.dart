@@ -110,20 +110,23 @@ class Body extends StatelessWidget {
                             children: [
                               CustomText(
                                 text: Buy[index],
+                                align: TextAlign.start,
                                 fontSize: 9.sp,
                                 fontWeight: FontWeight.w500,
                               ),
                               CustomText(
-                                  align: TextAlign.center,
+                                  align: TextAlign.start,
                                   text: product[index],
                                   fontSize: 9.sp,
                                   fontWeight: FontWeight.w500),
                               CustomText(
                                   text: type[index],
+                                  align: TextAlign.start,
                                   fontSize: 9.sp,
                                   fontWeight: FontWeight.w500),
                               CustomText(
                                   text: price[index],
+                                  align: TextAlign.start,
                                   fontSize: 9.sp,
                                   fontWeight: FontWeight.w500),
                               Image.asset(image[index]),

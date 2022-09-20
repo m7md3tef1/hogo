@@ -37,6 +37,9 @@ dependencies:
   flutter_screenutil:
   google_fonts:
   flutter_svg:
+  provider:
+  bloc:
+  flutter_bloc:
 
 dev_dependencies:
   flutter_test:

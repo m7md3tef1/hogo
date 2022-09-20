@@ -15,7 +15,6 @@ class Form extends StatelessWidget {
       child: Column(
         children: [
           CustomTextField(
-
             hintText: 'Satinder',
             height: 55.h,
             color: const Color(0xFF3D3D3D),
