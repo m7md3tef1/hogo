@@ -8,14 +8,20 @@ class CustomButton extends StatelessWidget {
   String? text;
   var width;
   var color;
-var icon;
+  var colorborder;
+  var colortext;
+  var font;
+  var icon;
   CustomButton(
       {Key? key,
-       this.function,
+      this.function,
+      this.colorborder,
+      this.colortext,
       required this.text,
+      this.font,
       this.width,
-        this.icon,
-    required  this.color})
+      this.icon,
+      required this.color})
       : super(key: key);
   @override
   Widget build(BuildContext context) {
@@ -25,22 +31,24 @@ var icon;
           width: 320.w,
           height: 48.h,
           decoration: BoxDecoration(
-            color: color,
-            borderRadius: BorderRadius.circular(10.r),
-          ),
+              color: color,
+              borderRadius: BorderRadius.circular(10.r),
+              border: Border.all(
+                  color:
+                      colorborder == null ? Colors.transparent : colorborder)),
           child: Center(
               child: Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Icon(icon),
-                  CustomText(
-            text: text,
-            color: Colors.black,
-            fontSize: 20.sp,
-            fontWeight: FontWeight.w600,
-          ),
-                ],
-              ))),
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Icon(icon),
+              CustomText(
+                text: text,
+                color: colortext == null ? Colors.black : colortext,
+                fontSize: font == null ? 20.sp : font,
+                fontWeight: FontWeight.w600,
+              ),
+            ],
+          ))),
     );
   }
 }

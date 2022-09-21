@@ -6,7 +6,8 @@ import 'package:hoga_load/widgets/widgets/custom_text.dart';
 
 class CustomAppbar extends StatelessWidget {
   String title;
-   CustomAppbar({Key? key,  required this.title}) : super(key: key) ;
+  var icon;
+   CustomAppbar({Key? key,  required this.title,this.icon}) : super(key: key) ;
 
 
   @override
@@ -16,7 +17,7 @@ class CustomAppbar extends StatelessWidget {
       children: [
         Container(
           color: Colors.white,
-          height: 121.h,
+          height: 100.h,
           width: 1.sw,
           child:
           Center(
@@ -25,7 +26,7 @@ class CustomAppbar extends StatelessWidget {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  SvgPicture.asset(AppImages.menu),
+                 SvgPicture.asset(AppImages.menu),
 
                   Center(
                     child: CustomText(
@@ -35,7 +36,7 @@ class CustomAppbar extends StatelessWidget {
                     ),
                   ),
 
-                  const Icon(Icons.account_circle_outlined),
+                   icon==null?const Icon(Icons.account_circle_outlined):icon,
                 ],
               ),
             ),
