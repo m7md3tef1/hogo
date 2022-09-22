@@ -43,7 +43,7 @@ class CustomText extends StatelessWidget {
 
           ),
 
-          maxLines: 4,
+          maxLines: 11,
           textAlign: align,
         ),
       ),

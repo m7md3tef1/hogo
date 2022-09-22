@@ -1,4 +1,5 @@
 import 'package:hoga_load/features/home/states.dart';
+import 'package:hoga_load/features/home/units/homescreen.dart';
 import 'package:hoga_load/features/jobs/view.dart';
 import 'package:hoga_load/features/loads/view.dart';
 import 'package:hoga_load/features/search_product/view.dart';
@@ -6,7 +7,6 @@ import 'package:hoga_load/features/vehicles/view.dart';
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-
 
 class HomeCubit extends Cubit<HomeStates> {
   HomeCubit() : super(HomeLayoutLoading());
@@ -16,9 +16,10 @@ class HomeCubit extends Cubit<HomeStates> {
   int currentIndex = 0;
 
   List<Widget> bottomScreens = [
+    const HomeScreen(),
     const SearchView(),
-   const LoadsView(),
-   const VehiclesView(),
+    const LoadsView(),
+    const VehiclesView(),
     const JobsView()
   ];
 

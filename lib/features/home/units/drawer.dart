@@ -136,6 +136,32 @@ class OnDrawer extends StatelessWidget {
               padding: const EdgeInsets.all(8.0),
               child: InkWell(
                 onTap: () {
+                  MagicRouter.navigateTo(const SubscriptionDetailsView());
+                },
+                child: Row(
+                  children: const [
+                    Padding(
+                      padding: EdgeInsets.all(8.0),
+                      child: Icon(
+                        Icons.details_outlined,
+                        color: Colors.orange,
+                      ),
+                    ),
+                    Padding(
+                      padding: EdgeInsets.all(8.0),
+                      child: Text(
+                        'SubscriptionDetails',
+                        style: TextStyle(fontSize: 20),
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: InkWell(
+                onTap: () {
                   MagicRouter.navigateTo(const UploadProductsView());
                 },
                 child: Row(
@@ -390,6 +416,32 @@ class OnDrawer extends StatelessWidget {
                       padding: EdgeInsets.all(8.0),
                       child: Text(
                         'AddVehicles',
+                        style: TextStyle(fontSize: 20),
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+            ),
+            Padding(
+              padding:  EdgeInsets.all(8.r),
+              child: InkWell(
+                onTap: () {
+                  MagicRouter.navigateTo(const AboutUsView());
+                },
+                child: Row(
+                  children:  [
+                    Padding(
+                      padding: EdgeInsets.all(8.r),
+                      child: const Icon(
+                        Icons.info_outline,
+                        color: Colors.orange,
+                      ),
+                    ),
+                     Padding(
+                      padding: EdgeInsets.all(8.r),
+                      child: const Text(
+                        'AboutUs',
                         style: TextStyle(fontSize: 20),
                       ),
                     ),

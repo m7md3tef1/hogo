@@ -17,27 +17,31 @@ class _BottomBar extends StatelessWidget {
           selectedLabelStyle: TextStyle(
               color:  Colors.black,
               fontWeight: FontWeight.w500,
-              fontSize: 17.sp),
+              fontSize: 15.sp),
           unselectedLabelStyle: TextStyle(
               color: Colors.grey, fontSize: 12.sp, fontWeight: FontWeight.w400),
           unselectedItemColor: Colors.grey,
           selectedItemColor:  Colors.black,
           items: [
             BottomNavigationBarItem(
+              backgroundColor: Colors.white,
+              icon: buildColumn(context,  0),
+              label: 'Home Screen'),
+            BottomNavigationBarItem(
                 backgroundColor: Colors.white,
-                icon: buildColumn(context,  0),
+                icon: buildColumn(context,  1),
                 label: 'Search Product'),
             BottomNavigationBarItem(
                 backgroundColor: Colors.white,
-                icon: buildColumn(context, 1),
+                icon: buildColumn(context, 2),
                 label: 'Loads'),
             BottomNavigationBarItem(
                 backgroundColor: Colors.white,
-                icon: buildColumn(context,  2),
+                icon: buildColumn(context,  3),
                 label: 'Vehicles'),
             BottomNavigationBarItem(
               backgroundColor: Colors.white,
-              icon: buildColumn(context, 3),
+              icon: buildColumn(context, 4),
               label: 'Jobs',
             ),
           ]),
